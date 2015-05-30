@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bogdan's Website</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="/../css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style type="text/css">
+</head>
+figcaption{
+text-align:center;
+}
+.jumbotron{
+	margin: 0;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #0076a3; border-right:0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	display:block;
+}
+.navbar-default{
+	margin: 0;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #0076a3; border-right:0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);	
+    clear: both;
+    padding-top:25px;
+	position: relative;
+	height:70px;
+	top:100px;
+}
+#tfheader{
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #00adee;
+}
+</style>
+<body>
+	<header>
+		<!-- SEARCH BAR -->
+		<div id="tfheader">
+			<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+			</form>
+		<div class="tfclear"></div>
+		</div>
+		
+	</header>	
+		<!-- NAV BAR -->
+        <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WEB TUTORIALS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">HTML<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           	<li><a href="html-tables.html">HTML Tables</a>
+				<li><a href="html-images.html">HTML Images</a></li>
+				<li><a href="html-lists.html">HTML Lists</a></li>
+				<li><a href="html-paragraphs.html">HTML Paragraphs</a></li>
+				<li><a href="html-input-types.html">HTML Input Types</a></li>
+		  </ul>
+        </li>
+        
+		 
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		   <li><a href="/pages/css/css-selectors.html">CSS Selectors</a>
+			<li><a href="/pages/css/css-tables.html">CSS Tables</a>
+			<li><a href="/pages/css/css-box-model.html">CSS Box Model</a>
+			<li><a href="/pages/css/css-padding.html">CSS Padding</a>
+			<li><a href="/pages/css/css-lists.html">CSS Lists</a>	
+		 </ul>
+        </li>
+		 
+		 
+		 <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PHP<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/php/php-arrays.php">PHP Arrays</a>
+			<li><a href="/pages/php/php-variables.php">PHP Variables</a>
+			<li><a href="/pages/php/php-strings.php">PHP Strings</a>
+			<li><a href="/pages/php/php-if-else-elseif.php">PHP If / Else / Elseif</a>
+			<li><a href="/pages/php/php-while-loop.php">PHP While Loop</a>
+		</ul>
+        </li>
+		
+		 
+		 <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">JAVASCRIPT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		   <li><a href="/pages/javascript/javascript-operators.html">JAVASCRIPT Operators</a>
+		   <li><a href="/pages/javascript/javascript-variables.html">JAVASCRIPT Variables</a>
+		   <li><a href="/pages/javascript/javascript-objects.html">JAVASCRIPT Objects</a> 
+		   <li><a href="/pages/javascript/javascript-switch-statement.html">JAVASCRIPT Switch</a> 
+			<li><a href="/pages/javascript/javascript-dates.html">JAVASCRIPT Dates</a> 
+		</ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+						
+	</div>
+	</div>	
+<div class="container">
+	<h1><span class="label label-info">Definition</span></h1>
+	<h3>An HTML structure for creating rows and columns on a Web page. You can think of it as a way to describe and display data that would make sense in spreadsheet software. 
+		Every table it is composed from the container table defined with the <code>&lt;table&gt</code> tags, divided into table rows, table data and table headings.
+		Table rows are defined with the <code>&lt;tr&gt</code> tags, table data with the <code>&lt;td&gt</code> tags and table headings with the <code>&lt;th&gt</code> tags. 
+		The whole text is regular and left-aligned by default in the <code>&lt;td&gt</code> elements and bold and centered by default in the <code>&lt;th&gt</code> elements. 
+		Inside the <code>&lt;td&gt;</code> tag, we can define how many columns cell will span using <code>colspan="no of columns"</code> and how many rows cell will span using <code>rowspan="no of rows"</code>.</h3>
+</div>
+<div class="container">
+	<h1><span class="label label-info">Syntax</span></h1>
+	<h3><code>&lt;table&gt;&lt;/table&gt;</code> - table
+	<h3><code>&lt;tr&gt;&lt;/tr&gt;</code> - table row
+	<h3><code>&lt;th&gt;&lt;/th&gt;</code> - table heading
+	<h3><code>&lt;td&gt;&lt;/td&gt;</code> - table data
+</div>
+<div class="container">
+	<h1><span class="label label-info">Example</span></h1>
+	<h3>Table (bordered table with contextual classes) :</h3>
+	<h3><strong>Code:</strong></h3>
+	<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>table</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"table table-bordered"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>thead</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Firstname<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Lastname<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Email<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>thead</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tbody</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Jill<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Smith<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>jill<span style='color:#008c00; '>.</span>smith@gmail<span style='color:#008c00; '>.</span>com<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"info"</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Eve<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Jackson<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>eve<span style='color:#008c00; '>.</span>jackson@gmail<span style='color:#008c00; '>.</span>com<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Donald<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Garcia<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>donald<span style='color:#008c00; '>.</span>garcia@gmail<span style='color:#008c00; '>.</span>com<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tbody</span><span style='color:#a65700; '>></span>
+  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>table</span><span style='color:#a65700; '>></span>
+</pre>
+</div>
+<div class="container">
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Open Table >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Bordered table with contextual classes</h4>
+			<p>Contextual classes can be used to color table rows or table cells</p>
+		</div>
+        <div class="modal-body">
+		  <div class="container-fluid">
+			<div class="table-responsive">  
+	<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>jill.smith@gmail.com</td>
+      </tr>
+      <tr class="info">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>eve.jackson@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Donald</td>
+        <td>Garcia</td>
+        <td>donald.garcia@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+	 </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+	</div>
+  </div>		
+ </div>
+</div>
+ 
+ <div class="container">
+	<h3>Table (bordered table with hover rows) :</h3>
+	<h3><strong>Code:</strong></h3>
+	<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>table</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"table table-hover table-bordered"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>thead</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Firstname<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Lastname<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Age<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>Occupation<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>th</span><span style='color:#a65700; '>></span>
+	  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>thead</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tbody</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>John<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Doe<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>30</span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Account collector<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+	  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>John<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Smith<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>43</span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Budget analyst <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>br</span><span style='color:#a65700; '>></span>Biology professor<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>br</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+	  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+	  <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Mary<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Moe<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>27</span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Credit analyst<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+	 <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>July<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Dooley<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>33</span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>Book Editor<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>td</span><span style='color:#a65700; '>></span>
+	 <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tr</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>tbody</span><span style='color:#a65700; '>></span>
+  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>table</span><span style='color:#a65700; '>></span>
+</pre>
+</div>
+<div class="container">
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Open Table >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Bordered table with hover rows</h4>
+			<p>Hover rows are very useful for big tables</p>
+		</div>
+        <div class="modal-body">
+		  <div class="container-fluid">
+			<div class="table-responsive">  
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+		<th>Occupation</th>
+	  </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>30</td>
+		<td>Account collector</td>
+	  </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>43</td>
+		<td>Budget analyst <br>Biology professor</br></td>
+	  </tr>
+	  <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>27</td>
+		<td>Credit analyst</td>
+	 </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>33</td>
+		<td>Book Editor</td>
+	 </tr>
+    </tbody>
+  </table>
+		</div>
+	 </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+	</div>
+  </div>		
+ </div>
+</div> 
+ </div>	
+	<footer>
+		<div class ="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+			<p>Copyright @ 2015 Predescu Bogdan</p>
+		</div>
+	</footer>	
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bogdan's Website</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="/../css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style type="text/css">
+</head>
+figcaption{
+text-align:center;
+}
+.jumbotron{
+	margin: 0;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #0076a3; border-right:0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	display:block;
+}
+.navbar-default{
+	margin: 0;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #0076a3; border-right:0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);	
+    clear: both;
+    padding-top:25px;
+	position: relative;
+	height:70px;
+	top:100px;
+}
+#tfheader{
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+<body>
+	<header>
+		<!-- SEARCH BAR -->
+		<div id="tfheader">
+			<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+			</form>
+		<div class="tfclear"></div>
+		</div>
+		
+	</header>	
+		<!-- NAV BAR -->
+        <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WEB TUTORIALS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">HTML<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           	<li><a href="html-tables.html">HTML Tables</a>
+				<li><a href="html-images.html">HTML Images</a></li>
+				<li><a href="html-lists.html">HTML Lists</a></li>
+				<li><a href="html-paragraphs.html">HTML Paragraphs</a></li>
+				<li><a href="html-input-types.html">HTML Input Types</a></li>
+		  </ul>
+        </li>
+        
+		 
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		   <li><a href="/pages/css/css-selectors.html">CSS Selectors</a>
+			<li><a href="/pages/css/css-tables.html">CSS Tables</a>
+			<li><a href="/pages/css/css-box-model.html">CSS Box Model</a>
+			<li><a href="/pages/css/css-padding.html">CSS Padding</a>
+			<li><a href="/pages/css/css-lists.html">CSS Lists</a>	
+		 </ul>
+        </li>
+		 
+		 
+		 <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PHP<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/php/php-arrays.php">PHP Arrays</a>
+			<li><a href="/pages/php/php-variables.php">PHP Variables</a>
+			<li><a href="/pages/php/php-strings.php">PHP Strings</a>
+			<li><a href="/pages/php/php-if-else-elseif.php">PHP If / Else / Elseif</a>
+			<li><a href="/pages/php/php-while-loop.php">PHP While Loop</a>
+		</ul>
+        </li>
+		
+		 <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">JAVASCRIPT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/javascript/javascript-operators.html">JAVASCRIPT Operators</a>
+			<li><a href="/pages/javascript/javascript-variables.html">JAVASCRIPT Variables</a>
+			<li><a href="/pages/javascript/javascript-objects.html">JAVASCRIPT Objects</a> 
+			<li><a href="/pages/javascript/javascript-switch-statement.html">JAVASCRIPT Switch</a> 
+			<li><a href="/pages/javascript/javascript-dates.html">JAVASCRIPT Dates</a> 
+		</ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<h1><span class="label label-info">Definition</span></h1>
+	<h3>There are 3 types of lists in HTML: <strong>unordered</strong> lists, <strong>ordered</strong> lists and <strong>description</strong> lists. We use the <code>&lt;ul&gt;</code> tags to define an <strong>unordered</strong> list and the <code>&lt;li&gt;</code> tags to define the list terms. We might also use type attributes (disk-default, circle, square) inside the <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags. Ordered lists are defined with the <code>&lt;ol&gt;</code> tags and their terms with the <code>&lt;li&gt;</code> tags. We might also use types attributes (1-default, A, a, I, i) for <strong>ordered</strong> lists to define the type of the marker. A <strong>Description</strong> list is a list where each term have a description inside the list of terms. We use <code>&lt;dl&gt;</code> tags for the description list, <code>&lt;dt&gt;</code> tags for the term (name) and <code>&lt;dd&gt;</code> tags to define the data (description).</h3>
+</div>
+<div class="container">
+	<h1><span class="label label-info">Syntax</span></h1>
+	<h3><strong>Unordered Lists:</strong></h3>
+	<h3><code>&lt;ul&gt;&lt;/ul&gt;</code> - defines an unordered list</h3>
+	<h3><code>&lt;li&gt;&lt;/li&gt;</code> - defines a list term</h3>
+	
+	<h3><strong>Ordered Lists:</strong></h3>
+	<h3><code>&lt;ol&gt;&lt;/ol&gt;</code> - defines an ordered list</h3>
+	<h3><code>&lt;li&gt;&lt;/li&gt;</code> - defines a list term</h3>
+	<h3><strong>Description Lists:</strong></h3>
+	<h3><code>&lt;dl&gt;&lt;/dl&gt;</code> - defines a description list</h3>
+	<h3><code>&lt;dt&gt;&lt;/dt&gt;</code> - defines the term (name)</h3>
+	<h3><code>&lt;ul&gt;&lt;/ul&gt;</code> - defines the data (description)</h3>
+</div>
+<div class="container">
+<h1><span class="label label-info">Example</span></h1>
+<h3><strong>Unordered List With Default Bullets</strong></h3>
+<h3><strong>Code:</strong></h3>
+<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>1</span> A<span style='color:#008c00; '>.</span>M<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>2</span> A<span style='color:#008c00; '>.</span>M<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#008c00; '>3</span> A<span style='color:#008c00; '>.</span>M<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+</pre>
+</div>
+<div class="container">	
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Open List >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Unordered List With Default Bullets</h3>
+        </div>
+        <div class="modal-body">
+			<ul><h4>
+				<li>1 A.M</li>
+				<li>2 A.M</li>
+				<li>3 A.M</li>
+			</h4></ul>  
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+</div>	
+
+<div class="container">
+<h3><strong>Ordered List With Uppercase Letters</strong></h3>
+<h3><strong>Code:</strong></h3>
+<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ol</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"A"</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>Morning<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>Afternoon<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>Evening<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ol</span><span style='color:#a65700; '>></span>
+</pre>
+</div>	
+
+<div class="container">	
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Open List >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Ordered List With Uppercase Letters</h3>
+        </div>
+        <div class="modal-body">
+			<h4><ol type="A">
+				<li>Morning</li>
+				<li>Afternoon</li>
+				<li>Evening</li>
+			</ol></h4>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>	
+	
+<div class="container">
+<h3><strong>Description List</strong></h3>
+<h3><strong>Code:</strong></h3>
+<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>dl</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>dt</span><span style='color:#a65700; '>></span>Smoking<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>dt</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>dd</span><span style='color:#a65700; '>></span>- bad habbit<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>dd</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>dt</span><span style='color:#a65700; '>></span>Jogging<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>dt</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>dd</span><span style='color:#a65700; '>></span>- good habbit<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>dd</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>dl</span><span style='color:#a65700; '>></span>
+</pre>
+</div>	
+
+<div class="container">	
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal3">Open List >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Description List</h3>
+        </div>
+        <div class="modal-body">
+			<dl><h4>
+				<dt>Smoking</dt>
+				<dd>- bad habbit</dd>
+				<dt>Jogging</dt>
+				<dd>- good habbit</dd>
+			</h4></dl>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>	
+
+
+ <div class="container">
+<h3><strong>List Group With Contextual Classes</strong></h3>
+<h3><strong>Code:</strong></h3>
+<pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"list-group"</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"list-group-item list-group-item-success"</span><span style='color:#a65700; '>></span>First book<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"list-group-item list-group-item-info"</span><span style='color:#a65700; '>></span>Second book<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"list-group-item list-group-item-warning"</span><span style='color:#a65700; '>></span>Third book<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+   <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"list-group-item list-group-item-danger"</span><span style='color:#a65700; '>></span>Fourth book<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+</pre>
+</div>	
+
+<div class="container">	
+	<!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal4">Open List >></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">List Group With Contextual Classes</h3>
+        </div>
+        <div class="modal-body">
+			<ul class="list-group"><h4>
+				<li class="list-group-item list-group-item-success">First book</li>
+				<li class="list-group-item list-group-item-info">Second book</li>
+				<li class="list-group-item list-group-item-warning">Third book</li>
+				<li class="list-group-item list-group-item-danger">Fourth book</li></h4>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>		
+	
+	<footer>
+		<div class ="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+			<p>Copyright @ 2015 Predescu Bogdan</p>
+		</div>
+	</footer>	
+
+</body>
+</html>
